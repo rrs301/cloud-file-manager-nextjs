@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React, { useEffect } from 'react'
 
-function login() {
+function Login() {
     const {data:session}=useSession();
     const router=useRouter();
     useEffect(()=>{
@@ -35,4 +35,4 @@ function login() {
   )
 }
 
-export default login
+export default Login
