@@ -78,7 +78,7 @@ function FolderList({ folderList ,isBig=true}) {
       "
     >
       {folderList.map((item, index) => (
-        <div onClick={() => onFolderClick(index, item)}>
+        <div key={index} onClick={() => onFolderClick(index, item)}>
       <FolderItemSmall folder={item} />
         
         </div>
